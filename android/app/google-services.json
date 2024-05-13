@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "420701607352",
+    "project_id": "maxstyle-3e805",
+    "storage_bucket": "maxstyle-3e805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420701607352:android:69226717233641ac37ab4d",
+        "android_client_info": {
+          "package_name": "com.example.khushi_collection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzpXQEwo65E1bmc-gsOJd7s-yK_1qbxjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
