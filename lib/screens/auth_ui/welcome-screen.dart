@@ -1,11 +1,14 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, unused_field
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:khushi_collection/controllers/google-sign-in-controller.dart';
 import 'package:lottie/lottie.dart';
 import '../../utils/app-constant.dart';
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+  WelcomeScreen({super.key});
+
+  final GoogleSignInComtroller _googleSignInComtroller=Get.put(GoogleSignInComtroller());
 
   // This widget is the root of your application.
   @override
@@ -52,7 +55,9 @@ class WelcomeScreen extends StatelessWidget {
                   child: TextButton.icon(
                     icon: Image.asset('assets/images/final-google-logo.png' , height: Get.height/20,),
                     label: Text("Sign in with google", style: TextStyle(fontSize: 22.0, color: Colors.white)),
-                    onPressed: (){},
+                    onPressed: (){
+                      _googleSignInComtroller.SignInWithGoogle();
+                    },
                     ),
                 ),
                 ),
