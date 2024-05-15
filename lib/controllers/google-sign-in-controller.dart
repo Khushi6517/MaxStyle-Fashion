@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, unused_field, non_constant_identifier_names, unused_local_variable, avoid_print, prefer_const_constructors
+// ignore_for_file: unused_import, unused_field, non_constant_identifier_names, unused_local_variable, avoid_print, prefer_const_constructors, file_names
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -46,7 +46,10 @@ class GoogleSignInComtroller extends GetxController{
             city: ''
             );
 
-           await FirebaseFirestore.instance.collection('users').doc(user.uid).set(userModel.toMap());
+           await FirebaseFirestore.instance
+           .collection('users')
+           .doc(user.uid)
+           .set(userModel.toMap());
            EasyLoading.dismiss();
            Get.offAll(()=>MainScreen());
 

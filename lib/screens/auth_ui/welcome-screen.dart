@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore, unused_field
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, unused_field, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:khushi_collection/controllers/google-sign-in-controller.dart';
+import 'package:khushi_collection/screens/auth_ui/sign-in-screen.dart';
 import 'package:lottie/lottie.dart';
 import '../../utils/app-constant.dart';
 class WelcomeScreen extends StatelessWidget {
@@ -81,7 +82,9 @@ class WelcomeScreen extends StatelessWidget {
                     Icon(Icons.email,
                     color: AppConstant.appTextColor ),
                     label: Text("Sign in with Email", style: TextStyle(fontSize: 22.0, color: Colors.white)),
-                    onPressed: (){},
+                    onPressed: (){
+                      Get.to(() => SignInScreen());
+                    },
                     ),
                 ),
                 )
